@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Judul Halaman-->
+    <title>Formulir Pendaftaran</title>
+
+    <!--Menambahkan Icon Halaman-->
+    <link rel="icon" href="Logo_Politeknik_Negeri_Lhokseumawe.png" type="image/x-icon"/>
+
+    <!--Link cdn untuk Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="container-fluid"> <!--Menggunakan tag div untuk membuat layout-->
+      <div class="row"> <!--tag div dengan class=row menandakan akan membuat baris-->
+        <div class="col bg-primary"></div> <!--tag div dengan class=rcol menandakan akan membuat kolom-->
+
+        <div class="col-5"> <!--tag div maksimal 12 kolom dan tag ini memiliki ukuran 5 kolom-->
+          <div class="row">
+            <center> <!--tag center untuk membuat text dan image ke tengah layar-->
+              <h1>FORMULIR PENDAFTARAN</h1> <!--Heading 1 untuk judul-->
+
+              <!--tag image untuk menampilkan gambar atau logo-->
+              <!--width untuk mengatur lebar dan height mengatur tinggi dari image-->
+              <img
+                src="Logo_Politeknik_Negeri_Lhokseumawe.png"
+                alt="Logo"
+                width="150"
+                height="150"/> <br><br>
+            </center>
+            <div class="row">
+              <div class="col-5">
+                <form> <!--tag pembuka form-->
+                <label for="fname">Nama Depan :</label><br> <!--memberi label sebagai pengarahan untuk apa yang diinput-->
+                <input type="text" id="fname" name="fname"><br> <!--input untuk nama bertipe text, id dan name untuk pengenal inputan-->
+
+                <label for="tanggal">Tanggal Lahir :</label><br>
+                <input type="date" id="tanggal" name="tanggal"><br> <!--input untuk tanggal lahir bertipe date-->
+
+                <label for="jk">Jenis Kelamin :</label><br>
+                <input type="radio" id="jk" name="jk"> Laki-laki <!--menggunakan tipe radio untuk memilih salah satu pilihan-->
+                <input type="radio" id="jk" name="jk"> Perempuan <br>
+
+                <label for="alamat">Alamat :</label><br>
+                <input type="text" id="alamat" name="alamat"><br>
+
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email"><br> <!--inputan untuk email bertipe email-->
+
+                <label for="foto">Foto :</label><br>
+                <input type="file" id="file" name="file"><br> <!--inputan bertipe file supaya user bisa menguplod file-->
+                </form> <!--tag penutup form-->
+              </div>
+              <div class="col">
+                <form>
+                <label for="lname">Nama Belakang :</label><br>
+                <input type="text" id="lname" name="lname">
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col">
+                <!--inputan berupa tombol, jika ditekan akan mengirimkan data inputan-->
+                <input class="rounded float-end" type="submit" value="Submit"><br><br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col bg-primary"></div>
+
+        <!--Footer dari bootstrap-->
+        <div class="row">
+        <div style="width:20%">
+          <br>
+          <img src="images.png" class="rounded float-end" alt="images" class="rounded" width="75" height="75" >
+        </div>
+
+        <div class="card text-left mb-3" style="width:20%">
+          <div class="card-body">
+            <h5 class="card-title">Tentang</h5>
+            <p class="card-text">
+              <br> Sejarah <br>Visi & Misi <br>Identitas
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card text-right mb-3" style="width:20%">
+          <div class="card-body">
+            <h5 class="card-title">Penelitian</h5>
+            <p class="card-text">
+              <br>Penelitian <br>Penelitian Dasar <br>Penelitian Terapan
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card text-right mb-3" style="width:40%">
+          <div class="card-body">
+            <h5 class="card-title">Hubungi Kami</h5>
+            <p class="card-text">
+              <br> Blang mangat, Lhokseumawe, Aceh, Indonesia <br>+6285285626566 <br>Siddiq@pnl.ac.id
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
